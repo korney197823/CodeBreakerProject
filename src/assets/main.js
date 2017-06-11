@@ -40,3 +40,20 @@ function validateInput(inputValue) {
   }
 
 }
+
+function getResults(input) {
+  let html = '<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">'
+
+  for( let i = 0; i < input.length; i++) {
+    if(input.charAt[i] === answer.value.charAt(i)) {
+      html += '<span class="glyphicon glyphicon-ok"></span>' ;
+    } else if (answer.value.indexOf(input.charAt(i)) > -1) {
+      html += '<span class="glyphicon glyphicon-transfer"></span>';
+    }
+    else  {
+      html += '<span class="glyphicon glyphicon-remove"></span>'
+    }
+  }
+  html += '</div></div>';
+  document.getElementById('results').innerHTML = html;
+}
