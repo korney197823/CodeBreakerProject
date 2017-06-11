@@ -25,9 +25,10 @@ document.createElement('label');
 
 function validateInput(inputValue) {
   if( inputValue.length === 4 ) {
-    setMessage("Guesses must be exactly 4 characters long.")
+    return true;
   }
   else {
+    setMessage("Guesses must be exactly 4 characters long.")
     return false;
   }
 
