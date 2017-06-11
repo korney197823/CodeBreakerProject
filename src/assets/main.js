@@ -60,8 +60,12 @@ function getResults(input) {
   document.getElementById('results').innerHTML = html;
 
   if(correctCount === 4) {
+    setMessage('You Win! :)');
     return true;
   }
+  if(attempt.value === '10') {
+    setMessage('You Lose! :(')
+  }
   return false;
-    
+
 }
