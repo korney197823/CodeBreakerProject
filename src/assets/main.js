@@ -9,7 +9,7 @@ function guess() {
     }
 
     if(validateInput(input.value)) {
-      attempt =+ 1;  
+      attempt.value =+ 1;
     }
     else {
       return false;
