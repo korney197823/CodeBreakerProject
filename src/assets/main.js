@@ -14,3 +14,8 @@ function setHiddenFields () {
   }
   answer.value = randomNumber;
 }
+
+function setMessage(message) {
+  let labelElement = document.createElement('label');
+  labelElement.innerHTML = message;
+}
