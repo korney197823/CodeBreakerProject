@@ -18,4 +18,11 @@ function setHiddenFields () {
 function setMessage(message) {
   let labelElement = document.createElement('label');
   labelElement.innerHTML = message;
+  return labelElement;
+}
+
+function validateInput(inputValue) {
+  if( inputValue.length === 4 ) {
+    setMessage("Guesses must be exactly 4 characters long.")
+  }
 }
