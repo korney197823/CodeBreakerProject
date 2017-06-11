@@ -8,7 +8,7 @@ function guess() {
       setHiddenFields();
     }
 
-    if(validateInput(input.value)) {
+    if(!validateInput(input.value)) {
       return;
     }
 
@@ -17,7 +17,7 @@ function guess() {
     if(getResults(input.value)) {
       setMessage("You Win! :)");
     } else if (attempt.value >= 10) {
-      setMessage("You Lose! :(")  
+      setMessage("You Lose! :(")
     }
 }
 
