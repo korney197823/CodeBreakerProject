@@ -63,7 +63,7 @@ function getResults(input) {
     setMessage('You Win! :)');
     return true;
   }
-  if(attempt.value === '10') {
+  if(attempt.value >= '10') {
     setMessage('You Lose! :(')
   }
   return false;
