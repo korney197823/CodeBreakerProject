@@ -27,13 +27,13 @@ function setHiddenFields () {
   while(answer.value.length < 4) {
     answer.value = '0' + answer.value;
   }
-  attempt.value = '0';
+  attempt.value = 0;
 
 
 }
 
 function setMessage(message) {
-document.createElement('label');
+  document.createElement('label');
   document.getElementById('message').innerHTML = message;
 }
 
