@@ -83,5 +83,10 @@ function showAnswer(success) {
   codeElem.innerHTML = answer.value;
 }
 
-setHiddenFields()
-showAnswer(true)
+function showReplay() {
+  let guessingDiv = document.getElementById('guessing-div')
+  let replayDiv = document.getElementById('replay-div');
+
+  guessingDiv.style.display = 'none';
+  replayDiv.style.display = 'block';
+}
