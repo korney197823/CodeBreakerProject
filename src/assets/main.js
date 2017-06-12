@@ -75,10 +75,10 @@ function getResults(input) {
 function showAnswer(success) {
   let codeElem = document.getElementById('code');
   if(success) {
-    codeElem.classList.add('success');
+    codeElem.className = 'success';
   }
   else {
-    codeElem.classList.add('failure');
+    codeElem.className = 'failure';
   }
   codeElem.innerHTML = answer.value;
 }
