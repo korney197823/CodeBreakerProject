@@ -79,7 +79,7 @@ function showAnswer(addition) {
     codeElem.classList.addClass('success');
   }
   else {
-    codeElem.classList.addClass('failure');
+    codeElem.classList.add('failure');
   }
 
 }
