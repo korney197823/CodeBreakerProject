@@ -76,7 +76,7 @@ function showAnswer(addition) {
   let codeElem = document.getElementById('code');
   codeElem.innerHTML = '<strong>' + answer.value + '</strong>';
   if(addition) {
-    codeElem.classList.addClass('success');
+    codeElem.classList.add('success');
   }
   else {
     codeElem.classList.add('failure');
