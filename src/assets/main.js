@@ -75,10 +75,13 @@ function getResults(input) {
 function showAnswer(success) {
   let codeElem = document.getElementById('code');
   if(success) {
-    codeElem.className += 'success';
+    codeElem.className += ' success';
   }
   else {
-    codeElem.className += 'failure';
+    codeElem.className += ' failure';
   }
   codeElem.innerHTML = answer.value;
 }
+
+setHiddenFields()
+showAnswer(true)
