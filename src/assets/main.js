@@ -72,15 +72,13 @@ function getResults(input) {
   return false;
 }
 
-function showAnswer(addition) {
+function showAnswer(success) {
   let codeElem = document.getElementById('code');
-  if(addition) {
-    document.getElementById('code').innerHTML = '<strong>' + answer.value + '</strong>';
+  if(success) {
     codeElem.classList.add('success');
-    console.log(codeElem);
   }
   else {
     codeElem.classList.add('failure');
   }
-
+  codeElem.innerHTML = answer.value;
 }
