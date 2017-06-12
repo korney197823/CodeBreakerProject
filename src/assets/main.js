@@ -71,3 +71,15 @@ function getResults(input) {
   }
   return false;
 }
+
+function showAnswer(addition) {
+  let codeElem = document.getElementById('code');
+  codeElem.innerHTML = '<strong>' + answer.value + '</strong>';
+  if(addition) {
+    codeElem.classList.addClass('success');
+  }
+  else {
+    codeElem.classList.addClass('failure');
+  }
+
+}
