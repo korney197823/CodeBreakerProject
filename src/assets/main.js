@@ -75,8 +75,9 @@ function getResults(input) {
 function showAnswer(addition) {
   let codeElem = document.getElementById('code');
   if(addition) {
-    codeElem.innerHTML = '<strong>' + answer.value + '</strong>';
+    document.getElementById('code').innerHTML = '<strong>' + answer.value + '</strong>';
     codeElem.classList.add('success');
+    console.log(codeElem);
   }
   else {
     codeElem.classList.add('failure');
